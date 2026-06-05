@@ -1,10 +1,33 @@
 # Joe Simo Pet
 
-Premium-polished Codex pet package for Joseph Simo.
+Premium-polished example Codex pet package for Joseph Simo.
 
-Install Joe's animated Codex pet in one terminal command, or copy the prompt below to ask Codex to make a custom pet from your own picture.
+Use this as an example package, or copy the prompt below to ask Codex to make a custom pet from your own face or picture.
 
 This repository is intentionally small and public-safe. It contains only the pet package, preview images, and validation artifacts. It does not include the `joesimo` personal website project, source website files, API code, credentials, or private source portraits.
+
+## Copy-Paste Prompt
+
+Paste this into Codex and attach a clear picture of your face, pet, mascot, or character:
+
+```text
+Use the hatch-pet skill to make my own Codex pet from my attached picture.
+
+Use my picture as the identity source, not Joe Simo's pet. Preserve the recognizable face, silhouette, colors, expression, and personality from my picture, but simplify it into a compact animated Codex pet that reads clearly at small size.
+
+Pet name: <my pet name>
+Style: auto, based on my picture
+Install location: ~/.codex/pets/<safe-pet-id>
+
+Create a complete Codex-compatible pet package with:
+- pet.json
+- spritesheet.webp
+- all required animation states: idle, running-right, running-left, waving, jumping, failed, waiting, running, review
+- contact sheet and preview images for visual QA
+- validation results for atlas size, transparency, unused cells, duplicate frames, and frame readability
+
+Keep it public-safe. Do not include my original picture, private files, credentials, API keys, or unrelated project files in the final package or any repository.
+```
 
 ## Contents
 
@@ -24,7 +47,7 @@ This repository is intentionally small and public-safe. It contains only the pet
 
 ![Joe Simo pet contact sheet](preview/contact-sheet.png)
 
-## Quick Install
+## Install Joe's Example Pet
 
 Paste this into a terminal to install the pet without cloning the repo:
 
@@ -48,16 +71,18 @@ cp pet/pet.json "$HOME/.codex/pets/simo-real/pet.json"
 cp pet/spritesheet.webp "$HOME/.codex/pets/simo-real/spritesheet.webp"
 ```
 
-## Make Your Own Codex Pet
+## Custom Pet Prompt With Image Path
 
-Paste this prompt into Codex and attach your picture, or replace the image path with the absolute path to a local image:
+If your picture is already saved locally, paste this into Codex and replace the image path:
 
 ```text
-Use the hatch-pet skill to make a Codex pet from my own picture.
+Use the hatch-pet skill to make my own Codex pet from my picture.
 
 Picture: <attach my image here, or use /absolute/path/to/my-picture.png>
 Pet name: <my pet name>
 Style: auto. Preserve the recognizable face, silhouette, colors, and personality from the picture, but make it readable as a small animated Codex pet.
+
+Use my picture as the identity source, not Joe Simo's pet.
 
 Create a complete Codex-compatible pet package with:
 - pet.json

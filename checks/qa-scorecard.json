@@ -1,150 +1,39 @@
 {
-  "transparent_rgb_residue_pixels": 0,
-  "exact_duplicate_frames": 0,
-  "running_right_baseline_range": 0,
-  "running_left_baseline_range": 0,
-  "running_work_baseline_range": 0,
-  "running_right_head_to_sprite_median": 0.45,
-  "running_left_head_to_sprite_median": 0.45,
-  "idle_head_to_sprite_median": 0.455,
-  "jumping_head_to_sprite_median": 0.442,
-  "jumping_head_to_sprite_range": 0.071,
-  "jumping_sprite_height_median": 190,
-  "jumping_sprite_height_range": 1,
-  "jumping_center_y_span": 10.5,
-  "jumping_bottom_range": 10,
-  "jumping_extraction_method": "stable-slots with deterministic scale normalization",
-  "premium_polish": "v3 face-preserving clothing/hair readability and dark UI silhouette polish",
-  "premium_quality_comparison": {
-    "current": {
-      "median_clothing_luma": 32.14,
-      "median_edge_clothing_luma": 23.13,
-      "max_mouth_blueish_pct": 0.0007,
-      "max_mouth_gray_pct": 0.1223
-    },
-    "premium_v3": {
-      "median_clothing_luma": 35.71,
-      "median_edge_clothing_luma": 34.92,
-      "max_mouth_blueish_pct": 0.0007,
-      "max_mouth_gray_pct": 0.1674
-    },
-    "delta": {
-      "median_clothing_luma": 3.57,
-      "median_edge_clothing_luma": 11.79,
-      "max_mouth_blueish_pct": 0.0,
-      "max_mouth_gray_pct": 0.0451
-    }
-  },
   "ok": true,
-  "mouth_color_review": {
-    "previous": {
-      "states": {
-        "idle": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0083,
-          "median_warm_or_teeth_pct": 0.9332
-        },
-        "running-right": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.005,
-          "median_warm_or_teeth_pct": 0.9685
-        },
-        "running-left": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0051,
-          "median_warm_or_teeth_pct": 0.9668
-        },
-        "waving": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0033,
-          "median_warm_or_teeth_pct": 0.9909
-        },
-        "jumping": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9845
-        },
-        "failed": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9906
-        },
-        "waiting": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0071,
-          "median_warm_or_teeth_pct": 0.9823
-        },
-        "running": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0015,
-          "median_warm_or_teeth_pct": 0.9846
-        },
-        "review": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9804
-        }
-      },
-      "overall": {
-        "max_blueish_pct": 0.0,
-        "max_gray_pct": 0.0083,
-        "median_warm_or_teeth_pct": 0.981
-      }
-    },
-    "premium_final": {
-      "states": {
-        "idle": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0083,
-          "median_warm_or_teeth_pct": 0.9332
-        },
-        "running-right": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.005,
-          "median_warm_or_teeth_pct": 0.9685
-        },
-        "running-left": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0051,
-          "median_warm_or_teeth_pct": 0.9668
-        },
-        "waving": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0033,
-          "median_warm_or_teeth_pct": 0.9909
-        },
-        "jumping": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9845
-        },
-        "failed": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9906
-        },
-        "waiting": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0071,
-          "median_warm_or_teeth_pct": 0.9823
-        },
-        "running": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0015,
-          "median_warm_or_teeth_pct": 0.9846
-        },
-        "review": {
-          "max_blueish_pct": 0.0,
-          "max_gray_pct": 0.0,
-          "median_warm_or_teeth_pct": 0.9804
-        }
-      },
-      "overall": {
-        "max_blueish_pct": 0.0,
-        "max_gray_pct": 0.0083,
-        "median_warm_or_teeth_pct": 0.981
-      }
-    },
-    "note": "Mouth check uses lower-center face crop only; shirt and collar are excluded."
-  }
+  "atlas": {
+    "contract": "spriteVersionNumber 2",
+    "dimensions": "1536x2288",
+    "format": "lossless WebP RGBA",
+    "transparentRgbResiduePixels": 0,
+    "opaqueChromaKeyPixels": 0,
+    "chromaFringePixels": 0,
+    "unusedCellPixels": 0
+  },
+  "animations": {
+    "statesPassed": 9,
+    "statesExpected": 9,
+    "previewFilesPassed": 9,
+    "directionalRunMirrorChecksPassed": 8,
+    "directionalRunCadenceMs": 120,
+    "unintendedDuplicateGroups": 0
+  },
+  "directions": {
+    "orderedDirectionsPassed": 16,
+    "orderedDirectionsExpected": 16,
+    "adjacentTransitionsPassed": 16,
+    "blindChecksPassed": 28,
+    "blindChecksExpected": 28,
+    "unresolved": 0
+  },
+  "finalVisualReview": {
+    "status": "pass",
+    "identityCoherent": true,
+    "stateSemanticsReadable": true,
+    "loopMotionReadable": true,
+    "visibleCyanHaloFindings": 0,
+    "cropFindings": 0,
+    "detachedFragmentFindings": 0
+  },
+  "errors": [],
+  "warnings": []
 }

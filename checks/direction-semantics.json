@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "order": "clockwise",
+  "stepDegrees": 22.5,
+  "directions": [
+    { "degrees": "000", "semantic": "up", "pass": true },
+    { "degrees": "022.5", "semantic": "up-right", "pass": true },
+    { "degrees": "045", "semantic": "up-right", "pass": true },
+    { "degrees": "067.5", "semantic": "up-right", "pass": true },
+    { "degrees": "090", "semantic": "right", "pass": true },
+    { "degrees": "112.5", "semantic": "down-right", "pass": true },
+    { "degrees": "135", "semantic": "down-right", "pass": true },
+    { "degrees": "157.5", "semantic": "down-right", "pass": true },
+    { "degrees": "180", "semantic": "down", "pass": true },
+    { "degrees": "202.5", "semantic": "down-left", "pass": true },
+    { "degrees": "225", "semantic": "down-left", "pass": true },
+    { "degrees": "247.5", "semantic": "down-left", "pass": true },
+    { "degrees": "270", "semantic": "left", "pass": true },
+    { "degrees": "292.5", "semantic": "up-left", "pass": true },
+    { "degrees": "315", "semantic": "up-left", "pass": true },
+    { "degrees": "337.5", "semantic": "up-left", "pass": true }
+  ],
+  "orderedDirectionsPassed": 16,
+  "adjacentTransitionsPassed": 16,
+  "blindChecksPassed": 28,
+  "unresolved": [],
+  "errors": [],
+  "warnings": []
+}

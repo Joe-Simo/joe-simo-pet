@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "status": "pass",
+  "atlasSha256": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
+  "decodedRgbaSha256": "c227b93d2f3f010ca8bfeec6896c4df3f096b7c3b0cf5ad5f99127e628939840",
+  "reviewed": [
+    "pet/spritesheet.webp",
+    "preview/contact-sheet.png",
+    "preview/look-directions.png",
+    "preview/animations/idle.gif",
+    "preview/animations/running-right.gif",
+    "preview/animations/running-left.gif",
+    "preview/animations/waving.gif",
+    "preview/animations/jumping.gif",
+    "preview/animations/failed.gif",
+    "preview/animations/waiting.gif",
+    "preview/animations/running.gif",
+    "preview/animations/review.gif"
+  ],
+  "findings": {
+    "allStatesReadable": true,
+    "identityCoherent": true,
+    "allRunFramesDistinct": true,
+    "runWrapCoherent": true,
+    "leftRunExactMirror": true,
+    "runCadenceUniform": true,
+    "allDirectionsReadable": true,
+    "directionOrderContinuous": true,
+    "visibleCyanHalo": false,
+    "opaqueKeyColorResidue": false,
+    "edgeCrop": false,
+    "detachedFragments": false,
+    "compositingArtifacts": false
+  },
+  "errors": [],
+  "warnings": []
+}

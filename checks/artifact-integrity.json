@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "copiesVerifiedIdentical": [
+    "repository package",
+    "installed package",
+    "release output package"
+  ],
+  "sha256": {
+    "pet/pet.json": "a9dc488ade6541f14d70ab77a8bb56bec3051e7f9c8b891268c61431447386fe",
+    "pet/spritesheet.webp": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
+    "preview/contact-sheet.png": "765ec7beea33ef0aa9932bed75be12b2e4293c765a749f19c099b07700e1d997",
+    "preview/look-directions.png": "3907cdf298ad8827c1525288a56342241561cfc7adeb5d8710f202040d3ec3fb",
+    "preview/animations/failed.gif": "66a8d8920c690392830dbf9239b495a68c9356af90a9248dad2d34795b108920",
+    "preview/animations/idle.gif": "b70b3bf85c66c65aee82dfe2324f59bbbb568127a4b43c2d49eb2aacbf0abc50",
+    "preview/animations/jumping.gif": "464d398fc48ebb395ef8894ff392f2778fd3a4f4d32fe73ad8ddebb6b28a1309",
+    "preview/animations/review.gif": "972911811d04d9b04533118fc02ffe4ebd55bcb2f46046aefed84ef071f3b66e",
+    "preview/animations/running-left.gif": "b2f01dbfbd9ffcaa5a12997656a7aef71fbd848c1bab7a2026a1fca0fe4bb3f2",
+    "preview/animations/running-right.gif": "c8511c0a752ad44f184e762296f5f2757a51008c7e285e95b2e29edd658889fe",
+    "preview/animations/running.gif": "e0d4d3a782636620d97173ba5a13be9e04373fb040be3dca2c974a43ccd25329",
+    "preview/animations/waiting.gif": "878026ee281d353d7a0a572f2e8e6d26a8077d619f5b11c5ef3e074b01c038d9",
+    "preview/animations/waving.gif": "ea8fd3a0287323c3b4ca777158af48ac525410ad0f305cb3d330b9d4a22ec29b"
+  },
+  "errors": [],
+  "warnings": []
+}

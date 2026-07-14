@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "packagedFile": "pet/spritesheet.webp",
+  "packagedSha256": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
+  "method": "post-clean component-preserving row assembly",
+  "algorithm": "edge-local-chroma-spill-suppression",
+  "components": [
+    {
+      "rows": [0, 3, 4, 5, 6, 7, 8, 9, 10],
+      "cleanupPasses": 1,
+      "alphaPreserved": true,
+      "rejectedPixels": 0
+    },
+    {
+      "rows": [1],
+      "cleanupPasses": 1,
+      "alphaPreserved": true,
+      "rejectedPixels": 0
+    },
+    {
+      "rows": [2],
+      "derivedFromCleanRow": 1,
+      "transform": "framewise-horizontal-mirror-preserving-order",
+      "colorInterpolation": false
+    }
+  ],
+  "postAssemblyEdits": "Exact cell-for-cell replacement in row 2; no resampling or color interpolation.",
+  "validation": {
+    "transparentRgbResiduePixels": 0,
+    "opaqueChromaKeyPixels": 0,
+    "chromaFringePixels": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "errors": [],
+  "warnings": []
+}

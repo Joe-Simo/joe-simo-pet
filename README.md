@@ -19,12 +19,16 @@ Pet name: <my pet name>
 Style: auto, based on my picture
 Install location: ~/.codex/pets/<safe-pet-id>
 
-Create a complete Codex-compatible pet package with:
+Create a complete Codex-compatible v2 pet package with:
 - pet.json
 - spritesheet.webp
+- spriteVersionNumber: 2
+- an 8-column x 11-row atlas with 192x208 cells
 - all required animation states: idle, running-right, running-left, waving, jumping, failed, waiting, running, review
-- contact sheet and preview images for visual QA
-- validation results for atlas size, transparency, unused cells, duplicate frames, and frame readability
+- all 16 clockwise look directions in 22.5-degree steps, starting at 000 up
+- contact sheet, look-direction sheet, and animated previews for visual QA
+- validation results for atlas size, transparency, chroma cleanup, unused cells, duplicate frames, frame readability, direction semantics, and adjacent-direction continuity
+- a blind direction review that confirms every horizontal and vertical landmark with no unresolved directions
 
 Keep it public-safe. Do not include my original picture, private files, credentials, API keys, or unrelated project files in the final package or any repository.
 ```
@@ -33,19 +37,29 @@ Keep it public-safe. Do not include my original picture, private files, credenti
 
 - `pet/pet.json` - Codex pet metadata.
 - `pet/spritesheet.webp` - Codex-compatible animated pet atlas.
-- `preview/` - contact sheets and visual QA previews.
-- `checks/` - validation and frame-audit JSON from the final installed package.
+- `preview/` - current contact sheet, direction sheet, and nine animated QA previews.
+- `checks/` - deterministic validation, direction, motion, integrity, and final visual-QA evidence.
 
 ## Pet Specs
 
-- Atlas size: `1536x1872`
+- Pet contract: `spriteVersionNumber: 2`
+- Atlas size: `1536x2288` (`8x11` cells)
 - Cell size: `192x208`
-- States: `idle`, `running-right`, `running-left`, `waving`, `jumping`, `failed`, `waiting`, `running`, `review`
-- Final installed hash: `84e15464f37409b798c2e59c5699540993acc98952c855c23737e1b8406c1e62`
+- Animation states: `idle`, `running-right`, `running-left`, `waving`, `jumping`, `failed`, `waiting`, `running`, `review`
+- Look directions: `16` clockwise poses in `22.5`-degree steps from `000` up through `337.5` up-left
+- Final installed SHA-256: `6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0`
 
 ## Preview
 
 ![Joe Simo pet contact sheet](preview/contact-sheet.png)
+
+![Joe Simo pet look directions](preview/look-directions.png)
+
+### Directional Run Cycles
+
+![Joe Simo pet running right](preview/animations/running-right.gif)
+
+![Joe Simo pet running left](preview/animations/running-left.gif)
 
 ## Install Joe's Example Pet
 
@@ -84,12 +98,16 @@ Style: auto. Preserve the recognizable face, silhouette, colors, and personality
 
 Use my picture as the identity source, not Joe Simo's pet.
 
-Create a complete Codex-compatible pet package with:
+Create a complete Codex-compatible v2 pet package with:
 - pet.json
 - spritesheet.webp
+- spriteVersionNumber: 2
+- an 8-column x 11-row atlas with 192x208 cells
 - all required animation states: idle, running-right, running-left, waving, jumping, failed, waiting, running, review
-- contact sheet and preview images for visual QA
-- validation results for atlas size, transparency, unused cells, duplicate frames, and frame readability
+- all 16 clockwise look directions in 22.5-degree steps, starting at 000 up
+- contact sheet, look-direction sheet, and animated previews for visual QA
+- validation results for atlas size, transparency, chroma cleanup, unused cells, duplicate frames, frame readability, direction semantics, and adjacent-direction continuity
+- a blind direction review that confirms every horizontal and vertical landmark with no unresolved directions
 
 Install the finished pet locally at:
 ~/.codex/pets/<safe-pet-id>
@@ -101,12 +119,18 @@ Keep it public-safe. Do not put my original private picture, credentials, API ke
 
 The final installed package passed:
 
-- `1536x1872` RGBA WebP atlas validation
+- `1536x2288` RGBA lossless WebP atlas validation for the `8x11` v2 contract
 - `0` transparent RGB residue pixels
-- `0` exact duplicate frames
+- `0` opaque chroma-key pixels and `0` chroma-fringe pixels
+- `0` unintended exact duplicate frames; the v2 neutral slot intentionally copies the first idle frame
 - `0` nontransparent unused-cell pixels
 - `0` large disconnected alpha-component anomalies
-- `0.0%` blueish pixels in the face-only mouth-color review
+- `8/8` running-left frames are exact horizontal mirrors of running-right
+- uniform `120 ms` cadence in both directional run loops, with no loop-end hitch
+- all `9` animation previews passed frame-count, transparency, state-readability, and loop review
+- `16/16` ordered look directions with clean adjacent-direction continuity
+- `28/28` blind horizontal and vertical direction checks confirmed by a three-reviewer majority
+- `0` deterministic or final visual-QA errors, warnings, or unresolved directions
 
 ## License
 

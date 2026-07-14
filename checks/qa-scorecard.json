@@ -15,7 +15,12 @@
     "previewFilesPassed": 9,
     "directionalRunMirrorChecksPassed": 8,
     "directionalRunCadenceMs": 120,
-    "unintendedDuplicateGroups": 0
+    "unintendedDuplicateGroups": 0,
+    "directionalRunBodyUniformity": "pass",
+    "directionalRunHeightPx": [198, 198],
+    "directionalRunHeadBandWidthPx": [65, 68],
+    "oppositeStepDepthReadable": true,
+    "athleticBodyDrift": false
   },
   "directions": {
     "orderedDirectionsPassed": 16,
@@ -28,6 +33,7 @@
   "finalVisualReview": {
     "status": "pass",
     "identityCoherent": true,
+    "sideRunSameCompactBody": true,
     "stateSemanticsReadable": true,
     "loopMotionReadable": true,
     "visibleCyanHaloFindings": 0,

@@ -1,8 +1,8 @@
 {
   "ok": true,
   "status": "pass",
-  "atlasSha256": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
-  "decodedRgbaSha256": "c227b93d2f3f010ca8bfeec6896c4df3f096b7c3b0cf5ad5f99127e628939840",
+  "atlasSha256": "7aa1f85966909849846f049f24ebee26b9634b2030c114115bce5944c1ff87f7",
+  "decodedRgbaSha256": "b1a34c6d3d5b27d9a4a3a23cf7595caa703178486bf2ce6d958b93eded0d9473",
   "reviewed": [
     "pet/spritesheet.webp",
     "preview/contact-sheet.png",
@@ -20,7 +20,10 @@
   "findings": {
     "allStatesReadable": true,
     "identityCoherent": true,
+    "sideRunSameCompactBody": true,
+    "athleticBodyDrift": false,
     "allRunFramesDistinct": true,
+    "oppositeStepDepthReadable": true,
     "runWrapCoherent": true,
     "leftRunExactMirror": true,
     "runCadenceUniform": true,
@@ -32,6 +35,7 @@
     "detachedFragments": false,
     "compositingArtifacts": false
   },
+  "reviewNote": "Arm lead is intentionally subtle in paired contact phases. At 120 ms the loop remains natural and non-duplicated because leg depth, occlusion, shoe stacking, and lower-leg overlap alternate clearly while the head and torso stay stable.",
   "errors": [],
   "warnings": []
 }

@@ -1,7 +1,7 @@
 {
   "ok": true,
   "atlas": "pet/spritesheet.webp",
-  "atlasSha256": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
+  "atlasSha256": "7aa1f85966909849846f049f24ebee26b9634b2030c114115bce5944c1ff87f7",
   "layout": {
     "columns": 8,
     "rows": 11,
@@ -29,6 +29,17 @@
     "loop": "infinite",
     "cropFindings": 0,
     "detachedFragmentFindings": 0
+  },
+  "bodyUniformity": {
+    "status": "pass",
+    "canonicalIdleHeightPx": [198, 198],
+    "directionalRunHeightPx": [198, 198],
+    "canonicalIdleHeadBandWidthPx": [63, 66],
+    "directionalRunHeadBandWidthPx": [65, 68],
+    "directionalRunCenterXPx": [95.5, 96.0],
+    "athleticBodyDrift": false,
+    "poseScaleJump": false,
+    "oppositeStepDepthReadable": true
   },
   "exactDuplicateGroups": [
     {

@@ -47,7 +47,7 @@ Keep it public-safe. Do not include my original picture, private files, credenti
 - Cell size: `192x208`
 - Animation states: `idle`, `running-right`, `running-left`, `waving`, `jumping`, `failed`, `waiting`, `running`, `review`
 - Look directions: `16` clockwise poses in `22.5`-degree steps from `000` up through `337.5` up-left
-- Final installed SHA-256: `6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0`
+- Final installed SHA-256: `7aa1f85966909849846f049f24ebee26b9634b2030c114115bce5944c1ff87f7`
 
 ## Preview
 
@@ -125,8 +125,9 @@ The final installed package passed:
 - `0` unintended exact duplicate frames; the v2 neutral slot intentionally copies the first idle frame
 - `0` nontransparent unused-cell pixels
 - `0` large disconnected alpha-component anomalies
+- all `16` side-running frames retain Joseph's compact canonical body: `198 px` height and a `65-68 px` head band, matching idle's `198 px` height and `63-66 px` head band
 - `8/8` running-left frames are exact horizontal mirrors of running-right
-- uniform `120 ms` cadence in both directional run loops, with no loop-end hitch
+- uniform `120 ms` cadence in both directional run loops, with distinct contact, compression, passing, and lift phases and no loop-end hitch
 - all `9` animation previews passed frame-count, transparency, state-readability, and loop review
 - `16/16` ordered look directions with clean adjacent-direction continuity
 - `28/28` blind horizontal and vertical direction checks confirmed by a three-reviewer majority

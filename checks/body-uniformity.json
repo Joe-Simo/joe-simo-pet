@@ -1,0 +1,73 @@
+{
+  "ok": true,
+  "repairRows": [
+    1,
+    2
+  ],
+  "sameBodyUniformity": {
+    "status": "pass",
+    "identity": "Joseph Simo",
+    "findings": {
+      "faceAndHairConsistent": true,
+      "oversizedHeadRatioConsistent": true,
+      "shortTorsoConsistent": true,
+      "limbThicknessConsistent": true,
+      "wardrobeConsistent": true,
+      "athleticBodyDrift": false,
+      "baselineStable": true,
+      "poseScaleJump": false
+    }
+  },
+  "beforeRepair": {
+    "runningRight": {
+      "widthRangePx": [73, 115],
+      "heightRangePx": [177, 194],
+      "headBandWidthRangePx": [59, 81],
+      "meanNontransparentPixels": 8028.9
+    },
+    "finding": "The side run varied in overall scale and silhouette and read leaner and more athletic than Joseph's compact canonical body."
+  },
+  "afterRepair": {
+    "atlasSha256": "7aa1f85966909849846f049f24ebee26b9634b2030c114115bce5944c1ff87f7",
+    "decodedRgbaSha256": "b1a34c6d3d5b27d9a4a3a23cf7595caa703178486bf2ce6d958b93eded0d9473",
+    "idleReference": {
+      "heightRangePx": [198, 198],
+      "headBandWidthRangePx": [63, 66],
+      "meanNontransparentPixels": 9996.7
+    },
+    "runningRight": {
+      "widthRangePx": [67, 87],
+      "heightRangePx": [198, 198],
+      "headBandWidthRangePx": [65, 68],
+      "centerXRangePx": [95.5, 96.0],
+      "meanNontransparentPixels": 9662.5,
+      "frames": [
+        {"frame": 0, "widthPx": 87, "heightPx": 198, "headWidthPx": 67, "centerX": 95.5, "nontransparentPixels": 10245},
+        {"frame": 1, "widthPx": 83, "heightPx": 198, "headWidthPx": 68, "centerX": 95.5, "nontransparentPixels": 10055},
+        {"frame": 2, "widthPx": 67, "heightPx": 198, "headWidthPx": 65, "centerX": 95.5, "nontransparentPixels": 8807},
+        {"frame": 3, "widthPx": 72, "heightPx": 198, "headWidthPx": 67, "centerX": 96.0, "nontransparentPixels": 9545},
+        {"frame": 4, "widthPx": 87, "heightPx": 198, "headWidthPx": 68, "centerX": 95.5, "nontransparentPixels": 10141},
+        {"frame": 5, "widthPx": 79, "heightPx": 198, "headWidthPx": 68, "centerX": 95.5, "nontransparentPixels": 9892},
+        {"frame": 6, "widthPx": 70, "heightPx": 198, "headWidthPx": 65, "centerX": 96.0, "nontransparentPixels": 9472},
+        {"frame": 7, "widthPx": 75, "heightPx": 198, "headWidthPx": 66, "centerX": 95.5, "nontransparentPixels": 9143}
+      ]
+    },
+    "runningLeft": {
+      "exactFramewiseMirrorOfRunningRight": true,
+      "mirrorChecksPassed": 8
+    },
+    "unchangedRowsDecodedPixelExact": [0, 3, 4, 5, 6, 7, 8, 9, 10]
+  },
+  "runtimeMotion": {
+    "frameCountPerDirection": 8,
+    "cadenceMs": 120,
+    "allFramesDistinct": true,
+    "contactCompressionPassingLiftReadable": true,
+    "oppositeStepDepthReadable": true,
+    "visibleSnap": false,
+    "loopEndHitch": false,
+    "armLead": "Subtle but non-blocking at runtime; trouser highlights, leg occlusion, shoe stacking, and lower-leg overlap clearly carry the opposite-step depth change."
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,30 +1,35 @@
 {
   "ok": true,
   "packagedFile": "pet/spritesheet.webp",
-  "packagedSha256": "6aa5f2800c7e3752c9c7b958cdae749d1049d607bf9c8afc584e247a93796da0",
+  "packagedSha256": "7aa1f85966909849846f049f24ebee26b9634b2030c114115bce5944c1ff87f7",
   "method": "post-clean component-preserving row assembly",
   "algorithm": "edge-local-chroma-spill-suppression",
   "components": [
     {
       "rows": [0, 3, 4, 5, 6, 7, 8, 9, 10],
-      "cleanupPasses": 1,
-      "alphaPreserved": true,
-      "rejectedPixels": 0
+      "source": "previous validated clean v2 atlas",
+      "decodedPixelsPreservedExactly": true,
+      "additionalCleanupPasses": 0
     },
     {
       "rows": [1],
       "cleanupPasses": 1,
       "alphaPreserved": true,
+      "changedPixels": 16721,
+      "decontaminatedPixels": 12702,
       "rejectedPixels": 0
     },
     {
       "rows": [2],
       "derivedFromCleanRow": 1,
       "transform": "framewise-horizontal-mirror-preserving-order",
+      "exactMirrorChecksPassed": 8,
+      "additionalCleanupPasses": 0,
+      "resampling": false,
       "colorInterpolation": false
     }
   ],
-  "postAssemblyEdits": "Exact cell-for-cell replacement in row 2; no resampling or color interpolation.",
+  "postAssemblyEdits": "Rows 1 and 2 were inserted cell-for-cell; no resampling, color interpolation, or manual pixel edits.",
   "validation": {
     "transparentRgbResiduePixels": 0,
     "opaqueChromaKeyPixels": 0,

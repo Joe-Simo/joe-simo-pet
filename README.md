@@ -135,4 +135,4 @@ The final installed package passed:
 
 ## License
 
-MIT. See `LICENSE`.
+GNU Affero General Public License v3.0 only (`AGPL-3.0-only`). See `LICENSE`.
